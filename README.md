@@ -2,6 +2,6 @@
 
 There are 3 endpoints currently - 
 
-GET product/categories - this will get category data
-GET product/brands - this will get brand data
-GET product/filter - this will filter for required products
+1. GET product/categories - this will get category data
+2. GET product/brands - this will get brand data
+3. GET product/filter - this will filter for required products
