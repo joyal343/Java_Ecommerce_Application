@@ -10,8 +10,8 @@ import java.util.List;
 public interface ProductDao extends JpaRepository<Product,Integer> {
     @Query(value = """
         SELECT * FROM product p
-        WHERE (:category IS NULL OR p.category = :category)
-        AND (:brand IS NULL OR p.brand = :brand)
+        WHERE (:category IS NULL OR LOWER(p.category) = LOWER(:category))
+        AND (:brand IS NULL OR LOWER(p.brand) = LOWER(:brand))
         AND (:minprice IS NULL OR p.price >= :minprice)
         AND (:maxprice IS NULL OR p.price <= :maxprice)
         """,

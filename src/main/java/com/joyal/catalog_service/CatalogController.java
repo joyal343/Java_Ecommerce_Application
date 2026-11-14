@@ -11,6 +11,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 import java.util.List;
+import java.util.Locale;
 
 @RestController
 @RequestMapping("catalog")
@@ -36,7 +37,10 @@ public class CatalogController {
             @RequestParam(required = false) Double minPrice,
             @RequestParam(required = false) Double maxPrice
             ){
-        return catalogService.getFilteredProducts(category,brand,minPrice,maxPrice);
+        System.out.println("Brand" + brand);
+        String cat = category != null ? category.toLowerCase() : null;
+        String br = brand != null ? brand.toLowerCase() : null;
+        return catalogService.getFilteredProducts(cat,br,minPrice,maxPrice);
     }
 
     @GetMapping("product/category")
