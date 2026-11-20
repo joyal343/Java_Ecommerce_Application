@@ -1,6 +1,7 @@
 package com.joyal.catalog_service.controller;
 
 import com.joyal.catalog_service.model.Cart;
+import com.joyal.catalog_service.model.CartItem;
 import com.joyal.catalog_service.service.CartService;
 import jakarta.validation.Valid;
 import jakarta.validation.constraints.NotNull;
