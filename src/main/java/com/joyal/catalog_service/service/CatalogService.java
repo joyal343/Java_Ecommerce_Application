@@ -1,4 +1,4 @@
-package com.joyal.catalog_service;
+package com.joyal.catalog_service.service;
 
 import com.joyal.catalog_service.dao.BrandDao;
 import com.joyal.catalog_service.dao.CategoryDao;

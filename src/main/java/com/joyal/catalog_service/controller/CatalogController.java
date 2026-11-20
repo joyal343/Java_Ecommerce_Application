@@ -1,5 +1,6 @@
-package com.joyal.catalog_service;
+package com.joyal.catalog_service.controller;
 
+import com.joyal.catalog_service.service.CatalogService;
 import com.joyal.catalog_service.model.Brand;
 import com.joyal.catalog_service.model.Category;
 import com.joyal.catalog_service.model.Product;
@@ -11,7 +12,6 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 import java.util.List;
-import java.util.Locale;
 
 @RestController
 @RequestMapping("catalog")
